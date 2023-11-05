@@ -1,0 +1,22 @@
+{
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "i18n-ally.localesPaths": [
+    "resources/lang",
+    "resources/js/i18n",
+    "resources/js/i18n/locales"
+  ],
+  "i18n-ally.keystyle": "nested",
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
