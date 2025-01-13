@@ -1,3 +1,4 @@
+import { slugify } from '../../../../../libs/utils/src';
 import { FieldType } from './fieldType.types';
 import { v4 as uuidv4 } from 'uuid';
 

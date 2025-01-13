@@ -50,7 +50,8 @@
     "tsup": "^8.3.5",
     "typescript": "^5.7.3",
     "vite": "^6.0.7",
-    "vitest": "^2.1.8"
+    "vitest": "^2.1.8",
+    "@nx/eslint": "20.3.1"
   },
   "resolutions": {
     "jackspeak": "2.1.1"

@@ -1,3 +1,4 @@
+import { slugify } from '@sport-tournament-manager/utils';
 import { PlayerType } from './playerType.types';
 import { v4 as uuidv4 } from 'uuid';
 

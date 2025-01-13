@@ -1,3 +1,3 @@
-export * from './components/isBoolean';
+export {isBoolean} from './components/isBoolean';
 
-export * from './components/slugify';
+export {slugify} from './components/slugify';
