@@ -1,32 +1,15 @@
-type Options = {
+import { PlayerType } from './playerType.types';
+import { v4 as uuidv4 } from 'uuid';
+
+class Player implements PlayerType {
   name: string;
-  avatar?: string;
-};
+  readonly slug: string;
+  uuid: string;
 
-type IPlayer = {
-  id: string;
-  name: string;
-  active: boolean;
-  avatar?: string;
-};
-
-class Player implements IPlayer {
-  id: string;
-  name: string;
-  active: boolean;
-  avatar?: string;
-
-  constructor(options: Options) {
-    this.id = self.crypto.randomUUID();
-    this.name = options.name;
-    this.avatar = options.avatar?.toString();
-    this.active = true;
-  }
-
-  disable() {
-    this.active = false;
-
-    return this;
+  constructor(name: string) {
+    this.name = name;
+    this.slug = slugify(name);
+    this.uuid = uuidv4();
   }
 }
 

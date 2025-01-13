@@ -1,34 +1,11 @@
-const competitionCategories = {
-  single: 'Single',
-  dual: 'Dual',
-  team: 'Team',
-}
+export class Competition {
+  constructor() {}
 
-// league / cup / tournament / championship
+  hasNextRound(): boolean {
+    return true;
+  }
 
-type ICompetition = {
-  name: string;
-  description: string;
-  startDate?: Date;
-  endDate?: Date;
-  category: typeof competitionCategories[keyof typeof competitionCategories];
-}
-
-class Competition implements ICompetition {  
-  constructor(
-    public name: string,
-    public description: string,
-    public startDate?: Date,
-    public endDate?: Date,
-    public category: typeof competitionCategories[keyof typeof competitionCategories]
-  ) {
-    this.name = name;
-    this.description = description;
-    this.category = category;
-
-    this.startDate = startDate;
-    this.endDate = endDate;
+  hasNextStage(): boolean {
+    return true;
   }
 }
-
-export default Competition;

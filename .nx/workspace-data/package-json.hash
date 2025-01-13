@@ -1,0 +1,424 @@
+{
+  "67116620530346908": {
+    "root": "apps/tournament-manager",
+    "sourceRoot": "apps/tournament-manager",
+    "name": "@sport-tournament-manager/manager",
+    "targets": {
+      "dev": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": "dev"
+        },
+        "metadata": {
+          "scriptContent": "vite",
+          "runCommand": "pnpm run dev"
+        }
+      },
+      "build": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": "build"
+        },
+        "metadata": {
+          "scriptContent": "tsc && vite build",
+          "runCommand": "pnpm run build"
+        }
+      },
+      "format": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": "format"
+        },
+        "metadata": {
+          "scriptContent": "prettier .  --write",
+          "runCommand": "pnpm run format"
+        }
+      },
+      "build:public": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": "build:public"
+        },
+        "metadata": {
+          "scriptContent": "tsup src/index.ts --dts --format cjs,esm --minify --clean --legacy-output dist/index.mjs --out-dir dist --external react,react-dom,react-router-dom,zod",
+          "runCommand": "pnpm run build:public"
+        }
+      },
+      "lint": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": "lint"
+        },
+        "metadata": {
+          "scriptContent": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+          "runCommand": "pnpm run lint"
+        }
+      },
+      "test": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": "test"
+        },
+        "metadata": {
+          "scriptContent": "vitest",
+          "runCommand": "pnpm run test"
+        }
+      },
+      "test:ui": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": "test:ui"
+        },
+        "metadata": {
+          "scriptContent": "vitest --ui",
+          "runCommand": "pnpm run test:ui"
+        }
+      },
+      "test:coverage": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": "test:coverage"
+        },
+        "metadata": {
+          "scriptContent": "vitest run --coverage",
+          "runCommand": "pnpm run test:coverage"
+        }
+      },
+      "preview": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": "preview"
+        },
+        "metadata": {
+          "scriptContent": "vite preview",
+          "runCommand": "pnpm run preview"
+        }
+      },
+      "nx-release-publish": {
+        "executor": "@nx/js:release-publish",
+        "dependsOn": [
+          "^nx-release-publish"
+        ],
+        "options": {}
+      }
+    },
+    "tags": [
+      "npm:public"
+    ],
+    "metadata": {
+      "targetGroups": {
+        "NPM Scripts": [
+          "dev",
+          "build",
+          "format",
+          "build:public",
+          "lint",
+          "test",
+          "test:ui",
+          "test:coverage",
+          "preview"
+        ]
+      },
+      "description": "",
+      "js": {
+        "packageName": "@sport-tournament-manager/manager"
+      }
+    }
+  },
+  "8671977042777861683": {
+    "root": "libs/ui-components",
+    "sourceRoot": "libs/ui-components",
+    "name": "@sport-tournament-manager/ui-components",
+    "targets": {
+      "dev": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": "dev"
+        },
+        "metadata": {
+          "scriptContent": "vite",
+          "runCommand": "pnpm run dev"
+        }
+      },
+      "build": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": "build"
+        },
+        "metadata": {
+          "scriptContent": "vite build",
+          "runCommand": "pnpm run build"
+        }
+      },
+      "preview": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": "preview"
+        },
+        "metadata": {
+          "scriptContent": "vite preview",
+          "runCommand": "pnpm run preview"
+        }
+      },
+      "storybook": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": "storybook"
+        },
+        "metadata": {
+          "scriptContent": "storybook dev -p 6006",
+          "runCommand": "pnpm run storybook"
+        }
+      },
+      "build-storybook": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": "build-storybook"
+        },
+        "metadata": {
+          "scriptContent": "storybook build",
+          "runCommand": "pnpm run build-storybook"
+        }
+      },
+      "init-msw": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": "init-msw"
+        },
+        "metadata": {
+          "scriptContent": "msw init public/",
+          "runCommand": "pnpm run init-msw"
+        }
+      }
+    },
+    "tags": [
+      "npm:private"
+    ],
+    "metadata": {
+      "targetGroups": {
+        "NPM Scripts": [
+          "dev",
+          "build",
+          "preview",
+          "storybook",
+          "build-storybook",
+          "init-msw"
+        ]
+      },
+      "js": {
+        "packageName": "@sport-tournament-manager/ui-components"
+      }
+    }
+  },
+  "11185017423519849160": {
+    "root": "libs/utils",
+    "sourceRoot": "libs/utils",
+    "name": "@sport-tournament-manager/utils",
+    "targets": {
+      "dev": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": "dev"
+        },
+        "metadata": {
+          "scriptContent": "vite",
+          "runCommand": "pnpm run dev"
+        }
+      },
+      "build": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": "build"
+        },
+        "metadata": {
+          "scriptContent": "tsc && vite build",
+          "runCommand": "pnpm run build"
+        }
+      },
+      "preview": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": "preview"
+        },
+        "metadata": {
+          "scriptContent": "vite preview",
+          "runCommand": "pnpm run preview"
+        }
+      },
+      "test": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": "test"
+        },
+        "metadata": {
+          "scriptContent": "vitest",
+          "runCommand": "pnpm run test"
+        }
+      },
+      "test:ui": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": "test:ui"
+        },
+        "metadata": {
+          "scriptContent": "vitest --ui",
+          "runCommand": "pnpm run test:ui"
+        }
+      },
+      "test:coverage": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": "test:coverage"
+        },
+        "metadata": {
+          "scriptContent": "vitest run --coverage",
+          "runCommand": "pnpm run test:coverage"
+        }
+      }
+    },
+    "tags": [
+      "npm:private"
+    ],
+    "metadata": {
+      "targetGroups": {
+        "NPM Scripts": [
+          "dev",
+          "build",
+          "preview",
+          "test",
+          "test:ui",
+          "test:coverage"
+        ]
+      },
+      "js": {
+        "packageName": "@sport-tournament-manager/utils"
+      }
+    }
+  },
+  "14905744534251068622": {
+    "root": "apps/tournament-manager",
+    "sourceRoot": "apps/tournament-manager",
+    "name": "manager",
+    "targets": {
+      "dev": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": "dev"
+        },
+        "metadata": {
+          "scriptContent": "vite",
+          "runCommand": "pnpm run dev"
+        }
+      },
+      "build": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": "build"
+        },
+        "metadata": {
+          "scriptContent": "tsc && vite build",
+          "runCommand": "pnpm run build"
+        }
+      },
+      "format": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": "format"
+        },
+        "metadata": {
+          "scriptContent": "prettier .  --write",
+          "runCommand": "pnpm run format"
+        }
+      },
+      "build:public": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": "build:public"
+        },
+        "metadata": {
+          "scriptContent": "tsup src/index.ts --dts --format cjs,esm --minify --clean --legacy-output dist/index.mjs --out-dir dist --external react,react-dom,react-router-dom,zod",
+          "runCommand": "pnpm run build:public"
+        }
+      },
+      "lint": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": "lint"
+        },
+        "metadata": {
+          "scriptContent": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+          "runCommand": "pnpm run lint"
+        }
+      },
+      "test": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": "test"
+        },
+        "metadata": {
+          "scriptContent": "vitest",
+          "runCommand": "pnpm run test"
+        }
+      },
+      "test:ui": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": "test:ui"
+        },
+        "metadata": {
+          "scriptContent": "vitest --ui",
+          "runCommand": "pnpm run test:ui"
+        }
+      },
+      "test:coverage": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": "test:coverage"
+        },
+        "metadata": {
+          "scriptContent": "vitest run --coverage",
+          "runCommand": "pnpm run test:coverage"
+        }
+      },
+      "preview": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": "preview"
+        },
+        "metadata": {
+          "scriptContent": "vite preview",
+          "runCommand": "pnpm run preview"
+        }
+      },
+      "nx-release-publish": {
+        "executor": "@nx/js:release-publish",
+        "dependsOn": [
+          "^nx-release-publish"
+        ],
+        "options": {}
+      }
+    },
+    "tags": [
+      "npm:public"
+    ],
+    "metadata": {
+      "targetGroups": {
+        "NPM Scripts": [
+          "dev",
+          "build",
+          "format",
+          "build:public",
+          "lint",
+          "test",
+          "test:ui",
+          "test:coverage",
+          "preview"
+        ]
+      },
+      "description": "",
+      "js": {
+        "packageName": "manager"
+      }
+    }
+  }
+}

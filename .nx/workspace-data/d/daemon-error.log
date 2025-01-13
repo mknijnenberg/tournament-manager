@@ -1,0 +1,26 @@
+Daemon process terminated and closed the connection
+
+Messages from the log:
+[NX Daemon Server] - 2025-01-13T21:21:27.460Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-01-13T21:21:27.582Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-01-13T21:21:27.582Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-01-13T21:21:27.582Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-01-13T21:21:27.582Z - [WATCHER]: Stopping the watcher for /Users/maartenknijnenberg/www/projects/sport-tournament-manager (sources)
+[NX Daemon Server] - 2025-01-13T21:21:27.583Z - [WATCHER]: Stopping the watcher for /Users/maartenknijnenberg/www/projects/sport-tournament-manager (outputs)
+[NX Daemon Server] - 2025-01-13T21:21:55.495Z - Started listening on: /var/folders/nk/v_7mvsk16kx_l4f8sj9w5z0m0000gq/T/499a2e8040c8af505583/d.sock
+[NX Daemon Server] - 2025-01-13T21:21:55.497Z - [WATCHER]: Subscribed to changes within: /Users/maartenknijnenberg/www/projects/sport-tournament-manager (native)
+[NX Daemon Server] - 2025-01-13T21:21:55.498Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-01-13T21:21:55.499Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-01-13T21:21:55.503Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-01-13T21:21:55.503Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-01-13T21:21:55.503Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-01-13T21:21:55.504Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-01-13T21:21:55.515Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-01-13T21:21:55.516Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2025-01-13T21:21:55.516Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-01-13T21:21:55.516Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-01-13T21:21:55.557Z - [WATCHER]: Processing file changes in outputs
+
+
+
+More information: /Users/maartenknijnenberg/www/projects/sport-tournament-manager/.nx/workspace-data/d/daemon.log

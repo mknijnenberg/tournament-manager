@@ -1,4 +1,4 @@
-import SideBar from './components/SideBar';
+import SideBar from './modules/layout/SideBar';
 import { Route, Routes } from 'react-router-dom';
 import TableTennis from './pages/TableTennis';
 import Home from './pages/Home';

@@ -1,117 +1,66 @@
-import {
-  IMatch,
-  MatchConfig,
-  MatchProps,
-  matchResult,
-  MatchResult,
-  matchSide,
-  MatchSide,
-  matchStatus,
-} from "./match.types";
+import { Field } from '../field/field';
+import { v4 as uuidv4 } from 'uuid';
+import Player from '../player/Player';
+
+export const matchResult = {
+  Player1Wins: 'player-1-wins',
+  Player2Wins: 'player-2-wins',
+  Draw: 'draw',
+  NoResult: 'no-result',
+} as const;
+
+export type MatchResult = (typeof matchResult)[keyof typeof matchResult];
+
+type IMatchProps = {
+  uuid?: string;
+  player1: Player;
+  player2: Player;
+  matchDate: Date;
+  field?: Field;
+  player1Score?: number;
+  player2Score?: number;
+};
+
+type IMatch = IMatchProps;
 
 class Match implements IMatch {
-  id: string;
-  bracket?: number;
-  round?: number;
-  sideA: MatchSide;
-  sideB: MatchSide;
-  field: number;
-  status: typeof matchStatus[keyof typeof matchStatus];
-  played: boolean;
-  result: MatchResult;
-  config: MatchConfig;
+  uuid: string;
+  player1: Player;
+  player2: Player;
+  matchDate: Date;
+  field?: Field;
+  player1Score?: number;
+  player2Score?: number;
 
-  constructor(options: MatchProps, config?: MatchConfig) {
-    this.id = self.crypto.randomUUID();
+  constructor(options: IMatchProps) {
+    this.player1 = options.player1;
+    this.player2 = options.player2;
+    this.matchDate = options.matchDate;
     this.field = options.field;
-    this.result = null;
-    this.played = false;
-    this.status = matchStatus.created;
+    this.player1Score = options.player1Score;
+    this.player2Score = options.player2Score;
 
-    this.config = this.setConfig(config);
+    this.uuid = options.uuid ?? uuidv4();
+  }
 
-    this.sideA = {
-      side: options.sideA || undefined,
-      score: null,
-      status: matchSide.active,
+  // #isAfterMatchDate(): boolean {
+  //   return new Date().getTime() > this.matchDate.getTime();
+  // }
+
+  get result(): MatchResult {
+    if (!this.player1Score || !this.player2Score) {
+      return matchResult.NoResult;
     }
 
-    this.sideB = {
-      side: options.sideB || undefined,
-      score: null,
-      status: matchSide.active,
-    }
-  }
-
-  setConfig(config: Record<string, boolean> = {}): MatchConfig {
-    const defaults: MatchConfig = {
-      needsAWinner: true,
-    }
-    
-    const newConfig = Object.assign({}, defaults, config);
-
-    return Object.keys(newConfig).reduce((acc, curr) => {
-      if (Object.keys(defaults).includes(curr)) {
-        (acc[curr]) = newConfig[curr];
-      }
-
-      return acc;
-    }, {}) as MatchConfig;
-  }
-
-  start() {
-    if (this.isEnded()) {
-      throw new Error('match already ended');
+    if (this.player1Score > this.player2Score) {
+      return matchResult.Player1Wins;
     }
 
-    if (this.isStarted()) {
-      throw new Error('match already started');
+    if (this.player1Score < this.player2Score) {
+      return matchResult.Player2Wins;
     }
 
-    this.status = matchStatus.started;
-    this.sideA.score = 0;
-    this.sideB.score = 0;
-  }
-
-  end({ scoreA, scoreB }: { scoreA: number; scoreB: number}) {
-    this.status = matchStatus.ended;
-    this.sideA.score = scoreA;
-    this.sideB.score = scoreB;
-
-    this.result = this.#calculateResult();
-  }
-
-  #calculateResult() {
-    if (this.isCreated()) return matchResult.notPlayed;
-  
-    if (this.isStarted()) return matchResult.inProgress;
-
-    if (this.sideA.score === null || this.sideB.score === null) return matchResult.error;
-    if (isNaN(this.sideA.score) || isNaN(this.sideB.score)) return matchResult.error;
-  
-    if (this.sideA.score > this.sideB.score) return matchResult.sideAWins;
-  
-    if (this.sideA.score < this.sideB.score) return matchResult.sideBWins;
-
-    if (this.sideA.score === this.sideB.score) return matchResult.draw;
-
-    return null;
-  }
-
-  isPlayed() {
-    return this.played;
-  }
-
-  isCreated() {
-    return this.status === matchStatus.created;
-  }
-
-  isStarted() {
-    return this.status === matchStatus.started;
-  }
-
-  isEnded() {
-    return this.status === matchStatus.ended;
+    return matchResult.Draw;
   }
 }
 

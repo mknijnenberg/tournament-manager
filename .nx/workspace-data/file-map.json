@@ -1,0 +1,598 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.3.1",
+  "pathMappings": {
+    "@nuxt-integrated/ui": [
+      "libs/ui/src/index.ts"
+    ],
+    "@nuxt-integrated/utils": [
+      "libs/utils/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [
+    {
+      "name": "nx/plugins/package-json"
+    }
+  ],
+  "fileMap": {
+    "projectFileMap": {
+      "@sport-tournament-manager/utils": [
+        {
+          "file": "libs/utils/.gitignore",
+          "hash": "13046175384202504187"
+        },
+        {
+          "file": "libs/utils/coverage/base.css",
+          "hash": "6204767174569381253"
+        },
+        {
+          "file": "libs/utils/coverage/block-navigation.js",
+          "hash": "1801078621803424330"
+        },
+        {
+          "file": "libs/utils/coverage/coverage-final.json",
+          "hash": "214910203606711608"
+        },
+        {
+          "file": "libs/utils/coverage/favicon.png",
+          "hash": "13402560043085226048"
+        },
+        {
+          "file": "libs/utils/coverage/index.html",
+          "hash": "977573186488796460"
+        },
+        {
+          "file": "libs/utils/coverage/prettify.css",
+          "hash": "8163588510556258587"
+        },
+        {
+          "file": "libs/utils/coverage/prettify.js",
+          "hash": "15884788582061322779"
+        },
+        {
+          "file": "libs/utils/coverage/slugify.ts.html",
+          "hash": "1324152242052377002"
+        },
+        {
+          "file": "libs/utils/coverage/sort-arrow-sprite.png",
+          "hash": "254831142482329146"
+        },
+        {
+          "file": "libs/utils/coverage/sorter.js",
+          "hash": "17053119163225536857"
+        },
+        {
+          "file": "libs/utils/index.html",
+          "hash": "6877086040867489148"
+        },
+        {
+          "file": "libs/utils/package.json",
+          "hash": "10823577392269453260",
+          "deps": [
+            "npm:@testing-library/jest-dom",
+            "npm:@testing-library/react",
+            "npm:@testing-library/user-event",
+            "npm:@vitest/coverage-v8",
+            "npm:@vitest/ui",
+            "npm:happy-dom",
+            "npm:pathe@2.0.1",
+            "npm:typescript",
+            "npm:vite",
+            "npm:vitest",
+            "npm:vite-plugin-dts"
+          ]
+        },
+        {
+          "file": "libs/utils/public/vite.svg",
+          "hash": "16046085400642193116"
+        },
+        {
+          "file": "libs/utils/src/components/slugify.test.ts",
+          "hash": "14095454814837451757"
+        },
+        {
+          "file": "libs/utils/src/components/slugify.ts",
+          "hash": "14950256248700644918"
+        },
+        {
+          "file": "libs/utils/src/index.ts",
+          "hash": "4832045516237870166"
+        },
+        {
+          "file": "libs/utils/src/is/index.ts",
+          "hash": "14144599955227554822"
+        },
+        {
+          "file": "libs/utils/src/tests/setupFiles.ts",
+          "hash": "4795749049005662271"
+        },
+        {
+          "file": "libs/utils/src/vite-env.d.ts",
+          "hash": "12946363841406869089"
+        },
+        {
+          "file": "libs/utils/tsconfig.json",
+          "hash": "15337872224458810919"
+        },
+        {
+          "file": "libs/utils/vite.config.ts",
+          "hash": "16270100301575351848"
+        },
+        {
+          "file": "libs/utils/vitest.config.ts",
+          "hash": "1547531834728821225"
+        }
+      ],
+      "@sport-tournament-manager/ui-components": [
+        {
+          "file": "libs/ui-components/.gitignore",
+          "hash": "13229253511055415007"
+        },
+        {
+          "file": "libs/ui-components/.storybook/main.ts",
+          "hash": "3156197953494034429"
+        },
+        {
+          "file": "libs/ui-components/.storybook/preview.ts",
+          "hash": "1060788935465326163"
+        },
+        {
+          "file": "libs/ui-components/LICENSE",
+          "hash": "3428849368670987869"
+        },
+        {
+          "file": "libs/ui-components/README.md",
+          "hash": "13083887428698681181"
+        },
+        {
+          "file": "libs/ui-components/index.html",
+          "hash": "16561795316508338856"
+        },
+        {
+          "file": "libs/ui-components/package.json",
+          "hash": "5504530416599895652",
+          "deps": [
+            "npm:@storybook/addon-essentials",
+            "npm:@storybook/addon-interactions",
+            "npm:@storybook/addon-links",
+            "npm:@storybook/blocks",
+            "npm:@storybook/react",
+            "npm:@storybook/react-vite",
+            "npm:@storybook/test",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@vitejs/plugin-react",
+            "npm:msw",
+            "npm:msw-storybook-addon",
+            "npm:prop-types",
+            "npm:storybook",
+            "npm:vite",
+            "npm:react@18.3.1",
+            "npm:react-dom@18.3.1"
+          ]
+        },
+        {
+          "file": "libs/ui-components/public/vite.svg",
+          "hash": "16046085400642193116"
+        },
+        {
+          "file": "libs/ui-components/src/App.css",
+          "hash": "3739391659270974612"
+        },
+        {
+          "file": "libs/ui-components/src/App.jsx",
+          "hash": "11450110202538461662"
+        },
+        {
+          "file": "libs/ui-components/src/assets/font/OpenSans-Light-webfont.eot",
+          "hash": "3532527554520708655"
+        },
+        {
+          "file": "libs/ui-components/src/assets/font/OpenSans-Light-webfont.svg",
+          "hash": "1390191217771912412"
+        },
+        {
+          "file": "libs/ui-components/src/assets/font/OpenSans-Light-webfont.ttf",
+          "hash": "1332536706352581692"
+        },
+        {
+          "file": "libs/ui-components/src/assets/font/OpenSans-Light-webfont.woff",
+          "hash": "13230354004337104944"
+        },
+        {
+          "file": "libs/ui-components/src/assets/font/OpenSans-Regular-webfont.eot",
+          "hash": "7642037625623817606"
+        },
+        {
+          "file": "libs/ui-components/src/assets/font/OpenSans-Regular-webfont.svg",
+          "hash": "5617473100767146446"
+        },
+        {
+          "file": "libs/ui-components/src/assets/font/OpenSans-Regular-webfont.ttf",
+          "hash": "8849298556884403679"
+        },
+        {
+          "file": "libs/ui-components/src/assets/font/OpenSans-Regular-webfont.woff",
+          "hash": "6197762826517582924"
+        },
+        {
+          "file": "libs/ui-components/src/assets/icon/percolate.eot",
+          "hash": "8658131508729243255"
+        },
+        {
+          "file": "libs/ui-components/src/assets/icon/percolate.svg",
+          "hash": "17640990790396274581"
+        },
+        {
+          "file": "libs/ui-components/src/assets/icon/percolate.ttf",
+          "hash": "8800119679438948561"
+        },
+        {
+          "file": "libs/ui-components/src/assets/icon/percolate.woff",
+          "hash": "16797934502539331207"
+        },
+        {
+          "file": "libs/ui-components/src/assets/react.svg",
+          "hash": "16069471864800376455"
+        },
+        {
+          "file": "libs/ui-components/src/index.css",
+          "hash": "11068964531412372218"
+        },
+        {
+          "file": "libs/ui-components/src/main.jsx",
+          "hash": "6771424453092939322"
+        },
+        {
+          "file": "libs/ui-components/src/stories/Button.jsx",
+          "hash": "11139165705398809119"
+        },
+        {
+          "file": "libs/ui-components/src/stories/Button.stories.ts",
+          "hash": "3142745305617132161"
+        },
+        {
+          "file": "libs/ui-components/src/stories/Header.jsx",
+          "hash": "1184649803577834222"
+        },
+        {
+          "file": "libs/ui-components/src/stories/Header.stories.ts",
+          "hash": "11296229411997847599"
+        },
+        {
+          "file": "libs/ui-components/src/stories/Introduction.mdx",
+          "hash": "14777386341912904913"
+        },
+        {
+          "file": "libs/ui-components/src/stories/Page.jsx",
+          "hash": "15937358102353576108"
+        },
+        {
+          "file": "libs/ui-components/src/stories/Page.stories.ts",
+          "hash": "14194280317114676981"
+        },
+        {
+          "file": "libs/ui-components/src/stories/assets/code-brackets.svg",
+          "hash": "1112009941262053247"
+        },
+        {
+          "file": "libs/ui-components/src/stories/assets/colors.svg",
+          "hash": "70613787918346063"
+        },
+        {
+          "file": "libs/ui-components/src/stories/assets/comments.svg",
+          "hash": "9521503280802117255"
+        },
+        {
+          "file": "libs/ui-components/src/stories/assets/direction.svg",
+          "hash": "2992177702218565737"
+        },
+        {
+          "file": "libs/ui-components/src/stories/assets/flow.svg",
+          "hash": "18413723651031157086"
+        },
+        {
+          "file": "libs/ui-components/src/stories/assets/plugin.svg",
+          "hash": "17508760966257502997"
+        },
+        {
+          "file": "libs/ui-components/src/stories/assets/repo.svg",
+          "hash": "15497985304567474255"
+        },
+        {
+          "file": "libs/ui-components/src/stories/assets/stackalt.svg",
+          "hash": "1180133531210893970"
+        },
+        {
+          "file": "libs/ui-components/src/stories/button.css",
+          "hash": "9641850067687118932"
+        },
+        {
+          "file": "libs/ui-components/src/stories/header.css",
+          "hash": "17474774144842035713"
+        },
+        {
+          "file": "libs/ui-components/src/stories/page.css",
+          "hash": "9171863330815678835"
+        },
+        {
+          "file": "libs/ui-components/src/tests/setup.js",
+          "hash": "4795749049005662271"
+        },
+        {
+          "file": "libs/ui-components/vite.config.js",
+          "hash": "7008402861428644331"
+        }
+      ],
+      "@sport-tournament-manager/manager": [
+        {
+          "file": "apps/tournament-manager/.editorconfig",
+          "hash": "16018554881173840505"
+        },
+        {
+          "file": "apps/tournament-manager/.eslintrc.cjs",
+          "hash": "16205554962337139131"
+        },
+        {
+          "file": "apps/tournament-manager/.gitignore",
+          "hash": "13046175384202504187"
+        },
+        {
+          "file": "apps/tournament-manager/README.md",
+          "hash": "5840632387862297281"
+        },
+        {
+          "file": "apps/tournament-manager/html/assets/index-2c21df7e.js",
+          "hash": "8912476197525762509"
+        },
+        {
+          "file": "apps/tournament-manager/html/assets/index-46946a8e.css",
+          "hash": "9702257104018931078"
+        },
+        {
+          "file": "apps/tournament-manager/html/bg.png",
+          "hash": "15666709144352482431"
+        },
+        {
+          "file": "apps/tournament-manager/html/favicon.svg",
+          "hash": "1812177503460559381"
+        },
+        {
+          "file": "apps/tournament-manager/html/html.meta.json.gz",
+          "hash": "10327283419300722901"
+        },
+        {
+          "file": "apps/tournament-manager/html/index.html",
+          "hash": "11936812358332545957"
+        },
+        {
+          "file": "apps/tournament-manager/index.html",
+          "hash": "4025202329384162906"
+        },
+        {
+          "file": "apps/tournament-manager/package.json",
+          "hash": "5270469749193907391",
+          "deps": [
+            "npm:@anatine/zod-mock",
+            "npm:@testing-library/jest-dom",
+            "npm:@testing-library/react",
+            "npm:@testing-library/user-event",
+            "@sport-tournament-manager/utils",
+            "@sport-tournament-manager/ui-components",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:@vitejs/plugin-react-swc",
+            "npm:@vitest/coverage-v8",
+            "npm:@vitest/ui",
+            "npm:autoprefixer",
+            "npm:daisyui",
+            "npm:eslint",
+            "npm:eslint-config-prettier",
+            "npm:eslint-plugin-react-hooks",
+            "npm:eslint-plugin-react-refresh",
+            "npm:happy-dom",
+            "npm:postcss",
+            "npm:prettier",
+            "npm:tailwindcss",
+            "npm:typescript",
+            "npm:vite",
+            "npm:vitest",
+            "npm:react@19.0.0",
+            "npm:react-dom@19.0.0",
+            "npm:react-router-dom",
+            "npm:uuid@11.0.5",
+            "npm:zod"
+          ]
+        },
+        {
+          "file": "apps/tournament-manager/postcss.config.js",
+          "hash": "1886002347757770194"
+        },
+        {
+          "file": "apps/tournament-manager/src/App.tsx",
+          "hash": "5162574459734441923"
+        },
+        {
+          "file": "apps/tournament-manager/src/assets/Mitbat-2007-bracket-large.png",
+          "hash": "13192259136797940018"
+        },
+        {
+          "file": "apps/tournament-manager/src/assets/Round-robin_tournament_10teams_en.png",
+          "hash": "13729946577032370989"
+        },
+        {
+          "file": "apps/tournament-manager/src/classes/README.md",
+          "hash": "17450688604857833340"
+        },
+        {
+          "file": "apps/tournament-manager/src/classes/competition/competition.ts",
+          "hash": "9149593301594286494"
+        },
+        {
+          "file": "apps/tournament-manager/src/classes/competition/competitionType.types.ts",
+          "hash": "5949661497042562796"
+        },
+        {
+          "file": "apps/tournament-manager/src/classes/field/field.test.ts",
+          "hash": "7411925973084885272"
+        },
+        {
+          "file": "apps/tournament-manager/src/classes/field/field.ts",
+          "hash": "13267339916617612958"
+        },
+        {
+          "file": "apps/tournament-manager/src/classes/field/fieldType.types.ts",
+          "hash": "16022839338795107669"
+        },
+        {
+          "file": "apps/tournament-manager/src/classes/field/table.ts",
+          "hash": "13193273790191302009"
+        },
+        {
+          "file": "apps/tournament-manager/src/classes/match/Match.ts",
+          "hash": "8237354710827837530"
+        },
+        {
+          "file": "apps/tournament-manager/src/classes/match/match.test.ts",
+          "hash": "5792776611521650753"
+        },
+        {
+          "file": "apps/tournament-manager/src/classes/player/player.ts",
+          "hash": "271828349000998877"
+        },
+        {
+          "file": "apps/tournament-manager/src/classes/player/playerType.types.ts",
+          "hash": "3461480075205106182"
+        },
+        {
+          "file": "apps/tournament-manager/src/classes/settings/settings.ts",
+          "hash": "16154668409544320432"
+        },
+        {
+          "file": "apps/tournament-manager/src/classes/settings/settingsType.types.ts",
+          "hash": "14965968060472613261"
+        },
+        {
+          "file": "apps/tournament-manager/src/classes/stages/roundRobin/RoundRobinStage.ts",
+          "hash": "4985508713869959852"
+        },
+        {
+          "file": "apps/tournament-manager/src/classes/stages/roundRobin/roundRobinStage.test.ts",
+          "hash": "10771153319193005005"
+        },
+        {
+          "file": "apps/tournament-manager/src/classes/tournament/builder/tournamentBuilder.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/tournament-manager/src/classes/tournament/table-tennis/tableTennisTournament.test.ts",
+          "hash": "13376584919190380910"
+        },
+        {
+          "file": "apps/tournament-manager/src/classes/tournament/table-tennis/tableTennisTournament.ts",
+          "hash": "9331505537885350916"
+        },
+        {
+          "file": "apps/tournament-manager/src/domain/tournament.ts",
+          "hash": "6047914310323257811"
+        },
+        {
+          "file": "apps/tournament-manager/src/index.css",
+          "hash": "2866083945719690482"
+        },
+        {
+          "file": "apps/tournament-manager/src/main.tsx",
+          "hash": "10144083200097418483"
+        },
+        {
+          "file": "apps/tournament-manager/src/modules/layout/SideBar.tsx",
+          "hash": "105240213186005688"
+        },
+        {
+          "file": "apps/tournament-manager/src/pages/Home.test.tsx",
+          "hash": "8103567565470435563"
+        },
+        {
+          "file": "apps/tournament-manager/src/pages/Home.tsx",
+          "hash": "10996287652595165271"
+        },
+        {
+          "file": "apps/tournament-manager/src/pages/TableTennis.test.tsx",
+          "hash": "35825678368936808"
+        },
+        {
+          "file": "apps/tournament-manager/src/pages/TableTennis.tsx",
+          "hash": "1265879315421698487"
+        },
+        {
+          "file": "apps/tournament-manager/src/tests/setupFiles.ts",
+          "hash": "4795749049005662271"
+        },
+        {
+          "file": "apps/tournament-manager/src/types/sportTypes.types.ts",
+          "hash": "2882095854613003415"
+        },
+        {
+          "file": "apps/tournament-manager/src/vite-env.d.ts",
+          "hash": "12946363841406869089"
+        },
+        {
+          "file": "apps/tournament-manager/tailwind.config.cjs",
+          "hash": "3945171987783159502"
+        },
+        {
+          "file": "apps/tournament-manager/tsconfig.json",
+          "hash": "4278858253902467067"
+        },
+        {
+          "file": "apps/tournament-manager/tsconfig.node.json",
+          "hash": "8586866767247417612"
+        },
+        {
+          "file": "apps/tournament-manager/vite.config.ts",
+          "hash": "7338608811672309762"
+        },
+        {
+          "file": "apps/tournament-manager/vitest.config.ts",
+          "hash": "1547531834728821225"
+        }
+      ]
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".gitignore",
+        "hash": "2885681724189879491"
+      },
+      {
+        "file": ".nvmrc",
+        "hash": "2848632016819325171"
+      },
+      {
+        "file": ".prettierrc.json",
+        "hash": "9112680970719034969"
+      },
+      {
+        "file": ".vscode/settings.json",
+        "hash": "5893913075270464130"
+      },
+      {
+        "file": "nx.json",
+        "hash": "15943927055932465974"
+      },
+      {
+        "file": "package.json",
+        "hash": "11067992456613836119"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "14862461906223083534"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "10170711322526066027"
+      }
+    ]
+  }
+}

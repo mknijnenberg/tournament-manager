@@ -1,17 +1,15 @@
-type Options = {
-  name: string;
-};
+import { FieldType } from './fieldType.types';
+import { v4 as uuidv4 } from 'uuid';
 
-type IField = {
+export class Field implements FieldType {
   name: string;
-};
+  readonly type = 'field';
+  uuid: string;
+  slug: string;
 
-class Field implements IField {
-  name: string;
-
-  constructor(options: Options) {
-    this.name = options.name;
+  constructor(name: string) {
+    this.name = name;
+    this.uuid = uuidv4();
+    this.slug = name.toLowerCase().replace(/\s/g, '-');
   }
 }
-
-export default Field;
